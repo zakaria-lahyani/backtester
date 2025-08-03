@@ -4,7 +4,7 @@
 paths:
   base_data_path: "C:/Users/zak/Desktop/workspace/datalake/gold"
   base_save_path: "C:/Users/zak/Desktop/workspace/datalake/gold"
-  template_dir_path: "C:/Users/zak/Desktop/workspace/git/client/config/optimiser/strategies"
+  template_dir_path: "C:/Users/zak/Desktop/workspace/git/backtester/config/optimiser/strategies"
 
 backtest:
   # Default backtesting parameters
@@ -129,7 +129,8 @@ indicators:
       - "macd.yaml.j2"
       - "macd_reversal.yaml.j2"
       - "macd_histogram.yaml.j2"
-    additional_params: {}
+    additional_params:
+      atr_distance: 0.0
 
   rsi:
     periods:
