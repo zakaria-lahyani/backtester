@@ -1,0 +1,23 @@
+aroon_5:
+  period: 5
+
+aroon_7:
+  period: 7
+
+aroon_10:
+  period: 10
+
+aroon_14:
+  period: 14
+
+aroon_21:
+  period: 21
+
+aroon_28:
+  period: 28
+
+aroon_35:
+  period: 35
+
+aroon_50:
+  period: 50

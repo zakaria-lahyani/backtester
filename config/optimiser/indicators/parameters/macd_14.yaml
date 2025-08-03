@@ -1,0 +1,75 @@
+
+macd_14_20_6:
+  fast: 14
+  slow: 20
+  signal: 6
+
+macd_14_20_9:
+  fast: 14
+  slow: 20
+  signal: 9
+
+macd_14_20_12:
+  fast: 14
+  slow: 20
+  signal: 12
+
+macd_14_24_6:
+  fast: 14
+  slow: 24
+  signal: 6
+
+macd_14_24_9:
+  fast: 14
+  slow: 24
+  signal: 9
+
+macd_14_24_12:
+  fast: 14
+  slow: 24
+  signal: 12
+
+macd_14_26_6:
+  fast: 14
+  slow: 26
+  signal: 6
+
+macd_14_26_9:
+  fast: 14
+  slow: 26
+  signal: 9
+
+macd_14_26_12:
+  fast: 14
+  slow: 26
+  signal: 12
+
+macd_14_28_6:
+  fast: 14
+  slow: 28
+  signal: 6
+
+macd_14_28_9:
+  fast: 14
+  slow: 28
+  signal: 9
+
+macd_14_28_12:
+  fast: 14
+  slow: 28
+  signal: 12
+
+macd_14_30_6:
+  fast: 14
+  slow: 30
+  signal: 6
+
+macd_14_30_9:
+  fast: 14
+  slow: 30
+  signal: 9
+
+macd_14_30_12:
+  fast: 14
+  slow: 30
+  signal: 12

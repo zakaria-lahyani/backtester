@@ -1,0 +1,277 @@
+# Backtester Configuration File
+# This centralizes all configuration to eliminate hardcoded values
+
+paths:
+  base_data_path: "C:/Users/zak/Desktop/workspace/datalake/gold"
+  base_save_path: "C:/Users/zak/Desktop/workspace/datalake/gold"
+  template_dir_path: "C:/Users/zak/Desktop/workspace/git/client/config/optimiser/strategies"
+
+backtest:
+  # Default backtesting parameters
+  initial_capital: 100000.0
+  point_value: 100.0
+  fees: 0.0
+  slippage: 0.0
+  cutoff_date: null
+  
+  # Timeframe mappings
+  timeframe_names:
+    "1": "M1"
+    "5": "M5"
+    "15": "M15"
+    "30": "M30"
+    "60": "H1"
+    "240": "H4"
+  
+  frequency_map:
+    "1": "1min"
+    "5": "5min"
+    "15": "15min"
+    "30": "30min"
+    "60": "1h"
+    "240": "4h"
+
+system:
+  # System configuration
+  logging_level: "INFO"
+  max_workers: 4
+  memory_limit_mb: 4096
+  cache_enabled: true
+  cache_size: 100
+  parallel_processing: true
+
+indicators:
+  macd:
+    periods:
+      - "8_20_6"
+      - "8_20_9"
+      - "8_20_12"
+      - "8_24_6"
+      - "8_24_9"
+      - "8_24_12"
+      - "8_26_6"
+      - "8_26_9"
+      - "8_26_12"
+      - "8_28_6"
+      - "8_28_9"
+      - "8_28_12"
+      - "8_30_6"
+      - "8_30_9"
+      - "8_30_12"
+      - "10_20_6"
+      - "10_20_9"
+      - "10_20_12"
+      - "10_24_6"
+      - "10_24_9"
+      - "10_24_12"
+      - "10_26_6"
+      - "10_26_9"
+      - "10_26_12"
+      - "10_28_6"
+      - "10_28_9"
+      - "10_28_12"
+      - "10_30_6"
+      - "10_30_9"
+      - "10_30_12"
+      - "12_20_6"
+      - "12_20_9"
+      - "12_20_12"
+      - "12_24_6"
+      - "12_24_9"
+      - "12_24_12"
+      - "12_26_6"
+      - "12_26_9"
+      - "12_26_12"
+      - "12_28_6"
+      - "12_28_9"
+      - "12_28_12"
+      - "12_30_6"
+      - "12_30_9"
+      - "12_30_12"
+      - "14_20_6"
+      - "14_20_9"
+      - "14_20_12"
+      - "14_24_6"
+      - "14_24_9"
+      - "14_24_12"
+      - "14_26_6"
+      - "14_26_9"
+      - "14_26_12"
+      - "14_28_6"
+      - "14_28_9"
+      - "14_28_12"
+      - "14_30_6"
+      - "14_30_9"
+      - "14_30_12"
+      - "16_20_6"
+      - "16_20_9"
+      - "16_20_12"
+      - "16_24_6"
+      - "16_24_9"
+      - "16_24_12"
+      - "16_26_6"
+      - "16_26_9"
+      - "16_26_12"
+      - "16_28_6"
+      - "16_28_9"
+      - "16_28_12"
+      - "16_30_6"
+      - "16_30_9"
+      - "16_30_12"
+    timeframes:
+      - "1"
+      - "5"
+      - "15"
+      - "30"
+      - "60"
+      - "240"
+    templates:
+      - "macd.yaml.j2"
+      - "macd_reversal.yaml.j2"
+      - "macd_histogram.yaml.j2"
+    additional_params: {}
+
+  rsi:
+    periods:
+      - "2"
+      - "3"
+      - "5"
+      - "7"
+      - "9"
+      - "11"
+      - "13"
+      - "15"
+      - "17"
+      - "19"
+      - "21"
+      - "24"
+    timeframes:
+      - "1"
+      - "5"
+      - "15"
+      - "30"
+      - "60"
+      - "240"
+    templates:
+      - "rsi.yaml.j2"
+      - "rsi_range.yaml.j2"
+      - "rsi_bullish.yaml.j2"
+      - "rsi_oversold.yaml.j2"
+      - "rsi_overbought.yaml.j2"
+    additional_params:
+      oversold_values: [10, 20, 30]
+      overbought_values: [70, 80, 90]
+
+  ursi:
+    periods:
+      - "2"
+      - "3"
+      - "5"
+      - "7"
+      - "9"
+      - "11"
+      - "13"
+      - "15"
+      - "17"
+      - "19"
+      - "21"
+      - "24"
+    timeframes:
+      - "1"
+      - "5"
+      - "15"
+      - "30"
+      - "60"
+      - "240"
+    templates:
+      - "ursi.yaml.j2"
+      - "ursi_range.yaml.j2"
+      - "ursi_bullish.yaml.j2"
+      - "ursi_oversold.yaml.j2"
+      - "ursi_overbought.yaml.j2"
+    additional_params:
+      oversold_values: [10, 20, 30]
+      overbought_values: [70, 80, 90]
+      bullish_level: 50
+
+  aroon:
+    periods:
+      - "5"
+      - "7"
+      - "10"
+      - "14"
+      - "21"
+      - "28"
+      - "35"
+      - "50"
+    timeframes:
+      - "1"
+      - "5"
+      - "15"
+      - "30"
+      - "60"
+      - "240"
+    templates:
+      - "aroon.yaml.j2"
+      - "aroon_extrems.yaml.j2"
+    additional_params: {}
+
+  sar:
+    periods:
+      - "1_1"
+      - "1_15"
+      - "1_2"
+      - "1_25"
+      - "1_3"
+      - "2_1"
+      - "2_15"
+      - "2_2"
+      - "2_25"
+      - "2_3"
+      - "3_1"
+      - "3_15"
+      - "3_2"
+      - "3_25"
+      - "3_3"
+      - "4_1"
+      - "4_15"
+      - "4_2"
+      - "4_25"
+      - "4_3"
+      - "5_1"
+      - "5_15"
+      - "5_2"
+      - "5_25"
+      - "5_3"
+    timeframes:
+      - "1"
+      - "5"
+      - "15"
+      - "30"
+      - "60"
+      - "240"
+    templates:
+      - "sar.yaml.j2"
+      - "sar_pullback.yaml.j2"
+    additional_params: {}
+
+  adx:
+    periods:
+      - "5"
+      - "7"
+      - "10"
+      - "14"
+      - "21"
+      - "28"
+      - "35"
+      - "50"
+    timeframes:
+      - "1"
+      - "5"
+      - "15"
+      - "30"
+      - "60"
+      - "240"
+    templates:
+      - "adx.yaml.j2"
+    additional_params: {}

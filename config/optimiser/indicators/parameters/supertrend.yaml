@@ -1,0 +1,144 @@
+supertrend_1_2:
+  period: 1
+  multiplier: 2.0
+
+supertrend_2_1_0:
+  period: 2
+  multiplier: 1.0
+
+supertrend_2_1_5:
+  period: 2
+  multiplier: 1.5
+
+supertrend_2_2_0:
+  period: 2
+  multiplier: 2.0
+
+supertrend_2_2_5:
+  period: 2
+  multiplier: 2.5
+
+supertrend_2_3_0:
+  period: 2
+  multiplier: 3.0
+
+supertrend_3_1_0:
+  period: 3
+  multiplier: 1.0
+
+supertrend_3_1_5:
+  period: 3
+  multiplier: 1.5
+
+supertrend_3_2_0:
+  period: 3
+  multiplier: 2.0
+
+supertrend_3_2_5:
+  period: 3
+  multiplier: 2.5
+
+supertrend_3_3_0:
+  period: 3
+  multiplier: 3.0
+
+supertrend_5_1_0:
+  period: 5
+  multiplier: 1.0
+
+supertrend_5_1_5:
+  period: 5
+  multiplier: 1.5
+
+supertrend_5_2_0:
+  period: 5
+  multiplier: 2.0
+
+supertrend_5_2_5:
+  period: 5
+  multiplier: 2.5
+
+supertrend_5_3_0:
+  period: 5
+  multiplier: 3.0
+
+supertrend_7_1_0:
+  period: 7
+  multiplier: 1.0
+
+supertrend_7_1_5:
+  period: 7
+  multiplier: 1.5
+
+supertrend_7_2_0:
+  period: 7
+  multiplier: 2.0
+
+supertrend_7_2_5:
+  period: 7
+  multiplier: 2.5
+
+supertrend_7_3_0:
+  period: 7
+  multiplier: 3.0
+
+supertrend_10_1_0:
+  period: 10
+  multiplier: 1.0
+
+supertrend_10_1_5:
+  period: 10
+  multiplier: 1.5
+
+supertrend_10_2_0:
+  period: 10
+  multiplier: 2.0
+
+supertrend_10_2_5:
+  period: 10
+  multiplier: 2.5
+
+supertrend_10_3_0:
+  period: 10
+  multiplier: 3.0
+
+supertrend_14_1_0:
+  period: 14
+  multiplier: 1.0
+
+supertrend_14_1_5:
+  period: 14
+  multiplier: 1.5
+
+supertrend_14_2_0:
+  period: 14
+  multiplier: 2.0
+
+supertrend_14_2_5:
+  period: 14
+  multiplier: 2.5
+
+supertrend_14_3_0:
+  period: 14
+  multiplier: 3.0
+
+supertrend_21_1_0:
+  period: 21
+  multiplier: 1.0
+
+supertrend_21_1_5:
+  period: 21
+  multiplier: 1.5
+
+supertrend_21_2_0:
+  period: 21
+  multiplier: 2.0
+
+supertrend_21_2_5:
+  period: 21
+  multiplier: 2.5
+
+supertrend_21_3_0:
+  period: 21
+  multiplier: 3.0
+

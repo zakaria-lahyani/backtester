@@ -1,0 +1,41 @@
+ema_5:
+  period: 5
+
+ema_7:
+  period: 7
+
+ema_9:
+  period: 9
+
+ema_14:
+  period: 14
+
+ema_17:
+  period: 17
+
+ema_21:
+  period: 21
+
+ema_28:
+  period: 28
+
+ema_50:
+  period: 50
+
+ema_90:
+  period: 90
+
+ema_120:
+  period: 120
+
+ema_140:
+  period: 140
+
+ema_160:
+  period: 160
+
+ema_180:
+  period: 180
+
+ema_200:
+  period: 200

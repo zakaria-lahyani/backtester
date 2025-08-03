@@ -1,0 +1,96 @@
+
+bb_10_1_5:
+  window: 10
+  num_std_dev: 1.5
+
+bb_10_2_0:
+  window: 10
+  num_std_dev: 2.0
+
+bb_10_2_5:
+  window: 10
+  num_std_dev: 2.5
+
+bb_10_3_0:
+  window: 10
+  num_std_dev: 3.0
+
+bb_14_1_5:
+  window: 14
+  num_std_dev: 1.5
+
+bb_14_2_0:
+  window: 14
+  num_std_dev: 2.0
+
+bb_14_2_5:
+  window: 14
+  num_std_dev: 2.5
+
+bb_14_3_0:
+  window: 14
+  num_std_dev: 3.0
+
+bb_20_1_5:
+  window: 20
+  num_std_dev: 1.5
+
+bb_20_2_0:
+  window: 20
+  num_std_dev: 2.0
+
+bb_20_2_5:
+  window: 20
+  num_std_dev: 2.5
+
+bb_20_3_0:
+  window: 20
+  num_std_dev: 3.0
+
+bb_25_1_5:
+  window: 25
+  num_std_dev: 1.5
+
+bb_25_2_0:
+  window: 25
+  num_std_dev: 2.0
+
+bb_25_2_5:
+  window: 25
+  num_std_dev: 2.5
+
+bb_25_3_0:
+  window: 25
+  num_std_dev: 3.0
+
+bb_30_1_5:
+  window: 30
+  num_std_dev: 1.5
+
+bb_30_2_0:
+  window: 30
+  num_std_dev: 2.0
+
+bb_30_2_5:
+  window: 30
+  num_std_dev: 2.5
+
+bb_30_3_0:
+  window: 30
+  num_std_dev: 3.0
+
+bb_50_1_5:
+  window: 50
+  num_std_dev: 1.5
+
+bb_50_2_0:
+  window: 50
+  num_std_dev: 2.0
+
+bb_50_2_5:
+  window: 50
+  num_std_dev: 2.5
+
+bb_50_3_0:
+  window: 50
+  num_std_dev: 3.0

@@ -1,0 +1,6 @@
+jinja2
+pyarrow
+vectorbt
+pyyaml
+
+git+ssh://git@github.com/zakaria-lahyani/price_wave.git

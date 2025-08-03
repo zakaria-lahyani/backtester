@@ -1,0 +1,38 @@
+name: "{{ signal_name }}_{{ period_htf }}_{{ higher_timeframe }}_{{ period_ltf }}_{{ lower_timeframe }}"
+timeframes: ["{{ lower_timeframe }}", "{{ higher_timeframe }}"]
+
+entry:
+  long:
+    mode: "all"
+    conditions:
+      - signal: "{{ signal_name }}_{{ period_ltf }}_{{ lower_timeframe }}"
+        operator: "crosses_above"
+        value: "{{ signal_name }}_{{ period_ltf }}_signal_{{ lower_timeframe }}"
+        timeframe: "{{ lower_timeframe }}"
+      - signal: "{{ signal_name }}_{{ period_htf }}_{{ higher_timeframe }}"
+        operator: ">"
+        value: "{{ signal_name }}_{{ period_htf }}_signal_{{ higher_timeframe }}"
+        timeframe: "{{ higher_timeframe }}"
+
+exit:
+  long:
+    mode: "any"
+    conditions:
+      - signal: "{{ signal_name }}_{{ period_ltf }}_{{ lower_timeframe }}"
+        operator: "crosses_below"
+        value: "{{ signal_name }}_{{ period_ltf }}_signal_{{ lower_timeframe }}"
+        timeframe: "{{ lower_timeframe }}"
+
+risk:
+  position_sizing:
+    type: "fixed"
+    value: 1
+    atr_distance: {{ atr_distance | float }}
+
+  sl:
+    type: "fixed"
+    value: 10
+
+  tp:
+    type: "fixed"
+    value: 1100.0

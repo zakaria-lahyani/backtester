@@ -1,0 +1,23 @@
+adx_5:
+  period: 5
+
+adx_7:
+  period: 7
+
+adx_10:
+  period: 10
+
+adx_14:
+  period: 14
+
+adx_21:
+  period: 21
+
+adx_28:
+  period: 28
+
+adx_35:
+  period: 35
+
+adx_50:
+  period: 50

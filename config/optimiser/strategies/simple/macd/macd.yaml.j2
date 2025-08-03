@@ -1,0 +1,34 @@
+name: "{{ signal_name }}_{{ period }}_{{ timeframe }}"
+timeframes: ["{{ timeframe }}"]
+
+entry:
+  long:
+    mode: "all"
+    conditions:
+      - signal: "{{ signal_name }}_{{ period }}"
+        operator: "crosses_above"
+        value: "{{ signal_name }}_{{ period }}_signal"
+        timeframe: "{{ timeframe }}"
+
+exit:
+  long:
+    mode: "any"
+    conditions:
+      - signal: "{{ signal_name }}_{{ period }}"
+        operator: "crosses_below"
+        value: "{{ signal_name }}_{{ period }}_signal"
+        timeframe: "{{ timeframe }}"
+
+risk:
+  position_sizing:
+    type: "fixed"
+    value: 1
+    atr_distance: {{ atr_distance | float }}
+
+  sl:
+    type: "fixed"
+    value: 10
+
+  tp:
+    type: "fixed"
+    value: 1100.0

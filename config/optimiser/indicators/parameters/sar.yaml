@@ -1,0 +1,100 @@
+
+sar_1_1:
+  acceleration: 0.01
+  max_acceleration: 0.1
+
+sar_1_15:
+  acceleration: 0.01
+  max_acceleration: 0.15
+
+sar_1_2:
+  acceleration: 0.01
+  max_acceleration: 0.2
+
+sar_1_25:
+  acceleration: 0.01
+  max_acceleration: 0.25
+
+sar_1_3:
+  acceleration: 0.01
+  max_acceleration: 0.3
+
+sar_2_1:
+  acceleration: 0.02
+  max_acceleration: 0.1
+
+sar_2_15:
+  acceleration: 0.02
+  max_acceleration: 0.15
+
+sar_2_2:
+  acceleration: 0.02
+  max_acceleration: 0.2
+
+sar_2_25:
+  acceleration: 0.02
+  max_acceleration: 0.25
+
+sar_2_3:
+  acceleration: 0.02
+  max_acceleration: 0.3
+
+sar_3_1:
+  acceleration: 0.03
+  max_acceleration: 0.1
+
+sar_3_15:
+  acceleration: 0.03
+  max_acceleration: 0.15
+
+sar_3_2:
+  acceleration: 0.03
+  max_acceleration: 0.2
+
+sar_3_25:
+  acceleration: 0.03
+  max_acceleration: 0.25
+
+sar_3_3:
+  acceleration: 0.03
+  max_acceleration: 0.3
+
+sar_4_1:
+  acceleration: 0.04
+  max_acceleration: 0.1
+
+sar_4_15:
+  acceleration: 0.04
+  max_acceleration: 0.15
+
+sar_4_2:
+  acceleration: 0.04
+  max_acceleration: 0.2
+
+sar_4_25:
+  acceleration: 0.04
+  max_acceleration: 0.25
+
+sar_4_3:
+  acceleration: 0.04
+  max_acceleration: 0.3
+
+sar_5_1:
+  acceleration: 0.05
+  max_acceleration: 0.1
+
+sar_5_15:
+  acceleration: 0.05
+  max_acceleration: 0.15
+
+sar_5_2:
+  acceleration: 0.05
+  max_acceleration: 0.2
+
+sar_5_25:
+  acceleration: 0.05
+  max_acceleration: 0.25
+
+sar_5_3:
+  acceleration: 0.05
+  max_acceleration: 0.3

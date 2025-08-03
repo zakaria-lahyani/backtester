@@ -1,0 +1,100 @@
+
+keltner_20_7_1_0:
+  ema_window: 20
+  atr_window: 7
+  multiplier: 1.0
+
+keltner_20_7_1_5:
+  ema_window: 20
+  atr_window: 7
+  multiplier: 1.5
+
+keltner_20_7_2_0:
+  ema_window: 20
+  atr_window: 7
+  multiplier: 2.0
+
+keltner_20_7_2_5:
+  ema_window: 20
+  atr_window: 7
+  multiplier: 2.5
+
+keltner_20_7_3_0:
+  ema_window: 20
+  atr_window: 7
+  multiplier: 3.0
+
+keltner_20_10_1_0:
+  ema_window: 20
+  atr_window: 10
+  multiplier: 1.0
+
+keltner_20_10_1_5:
+  ema_window: 20
+  atr_window: 10
+  multiplier: 1.5
+
+keltner_20_10_2_0:
+  ema_window: 20
+  atr_window: 10
+  multiplier: 2.0
+
+keltner_20_10_2_5:
+  ema_window: 20
+  atr_window: 10
+  multiplier: 2.5
+
+keltner_20_10_3_0:
+  ema_window: 20
+  atr_window: 10
+  multiplier: 3.0
+
+keltner_20_14_1_0:
+  ema_window: 20
+  atr_window: 14
+  multiplier: 1.0
+
+keltner_20_14_1_5:
+  ema_window: 20
+  atr_window: 14
+  multiplier: 1.5
+
+keltner_20_14_2_0:
+  ema_window: 20
+  atr_window: 14
+  multiplier: 2.0
+
+keltner_20_14_2_5:
+  ema_window: 20
+  atr_window: 14
+  multiplier: 2.5
+
+keltner_20_14_3_0:
+  ema_window: 20
+  atr_window: 14
+  multiplier: 3.0
+
+keltner_20_21_1_0:
+  ema_window: 20
+  atr_window: 21
+  multiplier: 1.0
+
+keltner_20_21_1_5:
+  ema_window: 20
+  atr_window: 21
+  multiplier: 1.5
+
+keltner_20_21_2_0:
+  ema_window: 20
+  atr_window: 21
+  multiplier: 2.0
+
+keltner_20_21_2_5:
+  ema_window: 20
+  atr_window: 21
+  multiplier: 2.5
+
+keltner_20_21_3_0:
+  ema_window: 20
+  atr_window: 21
+  multiplier: 3.0

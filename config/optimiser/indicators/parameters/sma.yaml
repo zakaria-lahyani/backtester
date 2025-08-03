@@ -1,0 +1,41 @@
+sma_5:
+  period: 5
+
+sma_7:
+  period: 7
+
+sma_9:
+  period: 9
+
+sma_14:
+  period: 14
+
+sma_17:
+  period: 17
+
+sma_21:
+  period: 21
+
+sma_28:
+  period: 28
+
+sma_50:
+  period: 50
+
+sma_90:
+  period: 90
+
+sma_120:
+  period: 120
+
+sma_140:
+  period: 140
+
+sma_160:
+  period: 160
+
+sma_180:
+  period: 180
+
+sma_200:
+  period: 200

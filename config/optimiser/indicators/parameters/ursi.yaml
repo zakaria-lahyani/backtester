@@ -1,0 +1,59 @@
+ursi_2:
+  src: close
+  length: 2
+  smooth_length: 2
+
+ursi_3:
+  src: close
+  length: 3
+  smooth_length: 3
+
+ursi_5:
+  src: close
+  length: 5
+  smooth_length: 5
+
+ursi_7:
+  src: close
+  length: 7
+  smooth_length: 7
+
+ursi_9:
+  src: close
+  length: 9
+  smooth_length: 9
+
+ursi_11:
+  src: close
+  length: 11
+  smooth_length: 11
+
+ursi_13:
+  src: close
+  length: 13
+  smooth_length: 13
+
+ursi_15:
+  src: close
+  length: 15
+  smooth_length: 15
+
+ursi_17:
+  src: close
+  length: 17
+  smooth_length: 17
+
+ursi_19:
+  src: close
+  length: 19
+  smooth_length: 19
+
+ursi_21:
+  src: close
+  length: 21
+  smooth_length: 21
+
+ursi_24:
+  src: close
+  length: 24
+  smooth_length: 24

@@ -1,0 +1,54 @@
+
+stochrsi_10_7_2_2:
+  rsi_period: 10
+  stochrsi_period: 7
+  k_smooth: 2
+  d_smooth: 2
+
+stochrsi_10_7_2_3:
+  rsi_period: 10
+  stochrsi_period: 7
+  k_smooth: 2
+  d_smooth: 3
+
+stochrsi_10_7_2_4:
+  rsi_period: 10
+  stochrsi_period: 7
+  k_smooth: 2
+  d_smooth: 4
+
+stochrsi_10_7_3_2:
+  rsi_period: 10
+  stochrsi_period: 7
+  k_smooth: 3
+  d_smooth: 2
+
+stochrsi_10_7_3_3:
+  rsi_period: 10
+  stochrsi_period: 7
+  k_smooth: 3
+  d_smooth: 3
+
+stochrsi_10_7_3_4:
+  rsi_period: 10
+  stochrsi_period: 7
+  k_smooth: 3
+  d_smooth: 4
+
+stochrsi_10_7_4_2:
+  rsi_period: 10
+  stochrsi_period: 7
+  k_smooth: 4
+  d_smooth: 2
+
+stochrsi_10_7_4_3:
+  rsi_period: 10
+  stochrsi_period: 7
+  k_smooth: 4
+  d_smooth: 3
+
+stochrsi_10_7_4_4:
+  rsi_period: 10
+  stochrsi_period: 7
+  k_smooth: 4
+  d_smooth: 4

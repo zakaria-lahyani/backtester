@@ -1,0 +1,60 @@
+rsi_2:
+  period: 2
+  signal_period: 2
+
+
+rsi_3:
+  period: 3
+  signal_period: 3
+
+
+rsi_5:
+  period: 5
+  signal_period: 5
+
+
+rsi_7:
+  period: 7
+  signal_period: 7
+
+
+rsi_9:
+  period: 9
+  signal_period: 9
+
+
+rsi_11:
+  period: 11
+  signal_period: 11
+
+
+rsi_13:
+  period: 13
+  signal_period: 13
+
+
+rsi_15:
+  period: 15
+  signal_period: 15
+
+
+rsi_17:
+  period: 17
+  signal_period: 17
+
+
+rsi_19:
+  period: 19
+  signal_period: 19
+
+
+rsi_21:
+  period: 21
+  signal_period: 21
+
+
+rsi_24:
+  period: 24
+  signal_period: 24
+
+

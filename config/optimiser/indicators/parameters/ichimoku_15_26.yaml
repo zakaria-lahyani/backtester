@@ -1,0 +1,72 @@
+
+ichimoku_15_26_45_20:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 45
+  chikou_shift: 20
+
+ichimoku_15_26_45_26:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 45
+  chikou_shift: 26
+
+ichimoku_15_26_45_30:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 45
+  chikou_shift: 30
+
+ichimoku_15_26_52_20:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 52
+  chikou_shift: 20
+
+ichimoku_15_26_52_26:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 52
+  chikou_shift: 26
+
+ichimoku_15_26_52_30:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 52
+  chikou_shift: 30
+
+ichimoku_15_26_60_20:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 60
+  chikou_shift: 20
+
+ichimoku_15_26_60_26:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 60
+  chikou_shift: 26
+
+ichimoku_15_26_60_30:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 60
+  chikou_shift: 30
+
+ichimoku_15_26_70_20:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 70
+  chikou_shift: 20
+
+ichimoku_15_26_70_26:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 70
+  chikou_shift: 26
+
+ichimoku_15_26_70_30:
+  tenkan_period: 15
+  kijun_period: 26
+  senkou_b_period: 70
+  chikou_shift: 30

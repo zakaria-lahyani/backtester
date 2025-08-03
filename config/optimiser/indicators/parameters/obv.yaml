@@ -1,0 +1,26 @@
+obv_5:
+  period: 5
+
+obv_7:
+  period: 7
+
+obv_10:
+  period: 10
+
+obv_14:
+  period: 14
+
+obv_21:
+  period: 21
+
+obv_28:
+  period: 28
+
+obv_50:
+  period: 50
+
+obv_80:
+  period: 80
+
+obv_100:
+  period: 100
