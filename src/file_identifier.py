@@ -1,12 +1,7 @@
-from dataclasses import dataclass
 from typing import Dict, List, Tuple, Optional, Any
-import pandas as pd
 import logging
 import os
 import yaml
-from pathlib import Path
-from jinja2 import Environment, FileSystemLoader
-from itertools import product
 import pyarrow.parquet as pq
 
 # Configure logging
@@ -16,14 +11,23 @@ logger = logging.getLogger(__name__)
 # ============================================================================
 # 4. FILE IDENTIFICATION FUNCTIONS
 # ============================================================================
+def remove_matching_suffix(columns_with_tf):
+    """
+    Remove the suffix from each column name if the suffix matches the timeframe.
+    columns_with_tf: list of tuples -> (column_name, timeframe)
+    """
+    cleaned = []
+    for col, tf in columns_with_tf:
+        suffix = f"_{tf}"
+        if col.endswith(suffix):
+            cleaned.append((col[:-len(suffix)], tf))
+        else:
+            cleaned.append((col, tf))
+    return cleaned
 
-def build_file_column_reference(symbol: str, data_path: str) -> Dict[str, Dict[str, List[str]]]:
+
+def build_file_column_reference(symbol: str, data_path: str, timeframes:dict) -> Dict[str, Dict[str, List[str]]]:
     """Build reference of which columns are in which files"""
-    timeframes = {
-        "1": "M1", "5": "M5", "15": "M15",
-        "30": "M30", "60": "H1", "240": "H4"
-    }
-
     column_reference = {tf: {} for tf in timeframes.keys()}
 
     if not os.path.exists(data_path):

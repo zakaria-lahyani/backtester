@@ -1,0 +1,38 @@
+name: "{{ signal_name }}_{{ period }}_{{ timeframe }}_oversold_{{ oversold_value }}"
+timeframes: ["{{ timeframe }}"]
+
+entry:
+  long:
+    mode: "all"
+    conditions:
+      - signal: "{{ signal_name }}_{{ period }}"
+        operator: "crosses_above"
+        value: "signal_{{ signal_name }}_{{ period }}"
+        timeframe: "{{ timeframe }}"
+      - signal: "{{ signal_name }}_{{ period }}"
+        operator: "<"
+        value: "{{ oversold_value }}"
+        timeframe: "{{ timeframe }}"
+
+exit:
+  long:
+    mode: "any"
+    conditions:
+      - signal: "{{ signal_name }}_{{ period }}"
+        operator: "crosses_below"
+        value: "signal_{{ signal_name }}_{{ period }}"
+        timeframe: "{{ timeframe }}"
+
+risk:
+  position_sizing:
+    type: "fixed"
+    value: 1
+    atr_distance: {{ atr_distance | float }}
+
+  sl:
+    type: "fixed"
+    value: 10
+
+  tp:
+    type: "fixed"
+    value: 1100.0

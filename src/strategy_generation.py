@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 # 3. STRATEGY GENERATION FUNCTIONS
 # ============================================================================
 
-def generate_strategy_contexts(indicator_config: IndicatorConfig) -> List[Dict[str, Any]]:
+def generate_simple_strategy_contexts(indicator_config: IndicatorConfig) -> List[Dict[str, Any]]:
     """Generate all parameter combinations for strategies"""
     contexts = []
 
@@ -30,6 +30,41 @@ def generate_strategy_contexts(indicator_config: IndicatorConfig) -> List[Dict[s
         contexts.append(context)
 
     logger.info(f"Generated {len(contexts)} strategy contexts")
+    return contexts
+
+def generate_combined_strategy_contexts(indicator_config: IndicatorConfig) -> List[Dict[str, Any]]:
+    """
+    Generate all parameter combinations for multi-timeframe strategies.
+    Ensures that higher_timeframe > lower_timeframe.
+    """
+    contexts = []
+
+    # Convert timeframes to integers for proper comparison
+    sorted_timeframes = sorted(indicator_config.timeframes, key=lambda x: int(x))
+
+    # Create all combinations of HTF and LTF with ordering constraint
+    for period_htf, higher_timeframe, period_ltf, lower_timeframe in product(
+        indicator_config.periods,
+        sorted_timeframes,
+        indicator_config.periods,
+        sorted_timeframes
+    ):
+        if int(higher_timeframe) <= int(lower_timeframe):
+            continue  # Ensure higher_timeframe is strictly greater
+
+        context = {
+            "period_htf": period_htf,
+            "higher_timeframe": higher_timeframe,
+            "period_ltf": period_ltf,
+            "lower_timeframe": lower_timeframe,
+            "signal_name": indicator_config.name
+        }
+
+        # Add any extra parameters from config
+        context.update(indicator_config.additional_params)
+        contexts.append(context)
+
+    logger.info(f"Generated {len(contexts)} combined (multi-timeframe) strategy contexts")
     return contexts
 
 

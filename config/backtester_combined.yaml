@@ -1,0 +1,132 @@
+# Backtester Configuration File
+# This centralizes all configuration to eliminate hardcoded values
+
+paths:
+  base_data_path: "C:/Users/zak/Desktop/workspace/datalake/gold"
+  base_save_path: "C:/Users/zak/Desktop/workspace/datalake/gold"
+  template_dir_path: "C:/Users/zak/Desktop/workspace/git/backtester/config/optimiser/strategies"
+
+backtest:
+  # Default backtesting parameters
+  initial_capital: 100000.0
+  point_value: 100.0
+  fees: 0.0
+  slippage: 0.0
+  cutoff_date: null
+  
+  # Timeframe mappings
+  timeframe_names:
+    "1": "M1"
+    "5": "M5"
+    "15": "M15"
+    "30": "M30"
+    "60": "H1"
+    "240": "H4"
+  
+  frequency_map:
+    "1": "1min"
+    "5": "5min"
+    "15": "15min"
+    "30": "30min"
+    "60": "1h"
+    "240": "4h"
+
+system:
+  # System configuration
+  logging_level: "INFO"
+  max_workers: 4
+  memory_limit_mb: 4096
+  cache_enabled: true
+  cache_size: 100
+  parallel_processing: true
+
+indicators:
+  macd:
+    periods:
+      - "8_20_6"
+      - "8_20_9"
+      - "8_20_12"
+      - "8_24_6"
+      - "8_24_9"
+      - "8_24_12"
+      - "8_26_6"
+      - "8_26_9"
+      - "8_26_12"
+      - "8_28_6"
+      - "8_28_9"
+      - "8_28_12"
+      - "8_30_6"
+      - "8_30_9"
+      - "8_30_12"
+      - "10_20_6"
+      - "10_20_9"
+      - "10_20_12"
+      - "10_24_6"
+      - "10_24_9"
+      - "10_24_12"
+      - "10_26_6"
+      - "10_26_9"
+      - "10_26_12"
+      - "10_28_6"
+      - "10_28_9"
+      - "10_28_12"
+      - "10_30_6"
+      - "10_30_9"
+      - "10_30_12"
+      - "12_20_6"
+      - "12_20_9"
+      - "12_20_12"
+      - "12_24_6"
+      - "12_24_9"
+      - "12_24_12"
+      - "12_26_6"
+      - "12_26_9"
+      - "12_26_12"
+      - "12_28_6"
+      - "12_28_9"
+      - "12_28_12"
+      - "12_30_6"
+      - "12_30_9"
+      - "12_30_12"
+      - "14_20_6"
+      - "14_20_9"
+      - "14_20_12"
+      - "14_24_6"
+      - "14_24_9"
+      - "14_24_12"
+      - "14_26_6"
+      - "14_26_9"
+      - "14_26_12"
+      - "14_28_6"
+      - "14_28_9"
+      - "14_28_12"
+      - "14_30_6"
+      - "14_30_9"
+      - "14_30_12"
+      - "16_20_6"
+      - "16_20_9"
+      - "16_20_12"
+      - "16_24_6"
+      - "16_24_9"
+      - "16_24_12"
+      - "16_26_6"
+      - "16_26_9"
+      - "16_26_12"
+      - "16_28_6"
+      - "16_28_9"
+      - "16_28_12"
+      - "16_30_6"
+      - "16_30_9"
+      - "16_30_12"
+    timeframes:
+      - "1"
+      - "5"
+      - "15"
+      - "30"
+      - "60"
+      - "240"
+    templates:
+      - "macd.yaml.j2"
+    additional_params:
+      atr_distance: 0.0
+
