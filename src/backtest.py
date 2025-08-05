@@ -76,9 +76,7 @@ def build_condition(cond: Dict[str, Any], df: pd.DataFrame) -> pd.Series:
         # Create a series with the literal value
         value_series = pd.Series(value_literal, index=df.index)
         is_column_reference = False
-    logger.info(f"signal_series : {signal_series}")
-    logger.info(f"value_series : {value_series}")
-    logger.info(f"is_column_reference : {is_column_reference}")
+
     # Apply operators
     if operator == "crosses_above":
         return crosses_above(signal_series, value_series, is_column_reference)

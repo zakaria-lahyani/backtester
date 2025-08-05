@@ -88,8 +88,8 @@ if __name__ == "__main__":
     indicators = [
         # "ichimoku", "sar", "rsi", "ursi", "aroon", "adx", "macd",
         # "stochrsi",
-         "bb",
-        # "keltner",
+        #  "bb",
+        "keltner",
         # "supertrend",
     ]
     # config_path = "config/backtester_combined.yaml"

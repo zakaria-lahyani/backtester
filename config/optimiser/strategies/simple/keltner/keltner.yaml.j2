@@ -5,7 +5,7 @@ entry:
   long:
     mode: "all"
     conditions:
-      - signal: "{{ signal_name }}_{{ period }}_percent_k"
+      - signal: "{{ signal_name }}_{{ period }}_percent_b"
         operator: "crosses_below"
         value: "{{ oversold_value }}"
         timeframe: "{{ timeframe }}"
@@ -14,7 +14,7 @@ exit:
   long:
     mode: "any"
     conditions:
-      - signal: "{{ signal_name }}_{{ period }}_percent_k"
+      - signal: "{{ signal_name }}_{{ period }}_percent_b"
         operator: "crosses_above"
         value: "{{ overbought_value }}"
         timeframe: "{{ timeframe }}"

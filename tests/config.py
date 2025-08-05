@@ -11,7 +11,7 @@ from src.template_parser import load_all_strategy_templates
 from src.timeframe_merge import merge_timeframes
 import pandas as pd
 
-indicator = "bb"
+indicator = "keltner"
 symbol = "xauusd"
 strategy_type: str = "simple"
 # strategy_type: str = "combined"
@@ -40,18 +40,10 @@ strategies = generate_all_strategies(templates, contexts, backtest_config.templa
 
 strategy_yaml = strategies[-1]
 
-print(contexts)
-print(strategy_yaml)
+# print(contexts)
 
-# file_reference = build_file_column_reference(backtest_config.symbol, backtest_config.data_path, backtest_config.timeframe_names)
-
-# if strategy_type == "combined":
-#     file_reference = build_file_column_reference(backtest_config.symbol, backtest_config.data_path,
-#                                                  backtest_config.timeframe_names)
-#     file_reference = add_timeframe_suffix_to_columns(file_reference)
-# else:
-#     file_reference = build_file_column_reference(backtest_config.symbol, backtest_config.data_path,
-#                                                  backtest_config.timeframe_names)
+file_reference = build_file_column_reference(backtest_config.symbol, backtest_config.data_path, backtest_config.timeframe_names)
+print(file_reference)
 
 
 # ============================================================================
@@ -63,15 +55,38 @@ print(strategy_yaml)
 # timeframes = strategy.get("timeframes")
 #
 # required_columns = identify_required_columns(strategy_yaml)
+# print(f"required_columns: {required_columns}")
 #
-# if strategy_type == "combined":
-#     required_columns = remove_matching_suffix(required_columns)
-#
-# print(required_columns)
-#
+# # if strategy_type == "combined":
+# #     required_columns = remove_matching_suffix(required_columns)
+# #
+# # print(required_columns)
+# #
 # files_needed: dict[str, dict[str, list[str]]] = find_files_for_strategy(required_columns, file_reference)
-# dataframes = load_strategy_data(files_needed, timeframes)
+# from collections import defaultdict
 #
+# files_needed = defaultdict(lambda: defaultdict(set))
+#
+# for column, timeframe in required_columns:
+#     print(f"{column} - {timeframe}")
+#     if timeframe and timeframe in file_reference:
+#         print(f"{timeframe} exist")
+#         for file_path, columns in file_reference[timeframe].items():
+#             print(f"{file_path}")
+#             if column in columns:
+#                 files_needed[timeframe][file_path].add(column)
+#
+# # Convert sets to lists
+# result = {
+#     tf: {fp: sorted(list(cols)) for fp, cols in file_dict.items()}
+#     for tf, file_dict in files_needed.items()
+# }
+#
+# print(result)
+#
+# dataframes = load_strategy_data(files_needed, timeframes)
+
+
 # timeframe_data = merge_timeframes(dataframes)
 #
 # main_timeframe = "_".join(timeframes)

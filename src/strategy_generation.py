@@ -14,19 +14,42 @@ logger = logging.getLogger(__name__)
 # ============================================================================
 
 def generate_simple_strategy_contexts(indicator_config: IndicatorConfig) -> List[Dict[str, Any]]:
-    """Generate all parameter combinations for strategies"""
+    """Generate all parameter combinations for strategies."""
     contexts = []
 
-    # Create all combinations of periods and timeframes
-    for period, timeframe in product(indicator_config.periods, indicator_config.timeframes):
+    # Safely get oversold and overbought lists (wrap single values in lists)
+    oversold_values = indicator_config.additional_params.get("oversold_value")
+    if oversold_values is None:
+        oversold_values = [None]
+    elif not isinstance(oversold_values, (list, tuple)):
+        oversold_values = [oversold_values]
+
+    overbought_values = indicator_config.additional_params.get("overbought_value")
+    if overbought_values is None:
+        overbought_values = [None]
+    elif not isinstance(overbought_values, (list, tuple)):
+        overbought_values = [overbought_values]
+
+    # Create all combinations of periods, timeframes, oversold, overbought
+    for period, timeframe, ovsold, ovbought in product(
+        indicator_config.periods,
+        indicator_config.timeframes,
+        oversold_values,
+        overbought_values
+    ):
         context = {
-            'period': period,
-            'timeframe': timeframe,
-            'signal_name': indicator_config.name
+            "period": period,
+            "timeframe": timeframe,
+            "signal_name": indicator_config.name,
+            "oversold_value": ovsold,
+            "overbought_value": ovbought
         }
 
-        # Add additional parameters
-        context.update(indicator_config.additional_params)
+        # Add remaining additional parameters without overwriting specific values
+        for k, v in indicator_config.additional_params.items():
+            if k not in context:
+                context[k] = v
+
         contexts.append(context)
 
     logger.info(f"Generated {len(contexts)} strategy contexts")
