@@ -3,4 +3,8 @@ pyarrow
 vectorbt
 pyyaml
 
+dash
+datashader
+# pip install polars[pyarrow] panel holoviews hvplot datashader numpy
+
 git+ssh://git@github.com/zakaria-lahyani/price_wave.git
